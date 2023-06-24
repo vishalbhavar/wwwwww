@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .btn{
+        width: 9em;
+        height: 3em;
+        border-radius: 30em;
+        font-size: 15px;
+        font-family: inherit;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 6px 6px 12px #d54190,
+        -6px -6px 12px #1a1acd;
+        ;
+
+    }
+    .btn ::before{
+        contain: '';
+        width: 0;
+        height: 3em;
+        border-radius: 30em;
+        position :absolute ;
+       
+        top: 0;
+        left: 0;
+       
+        transition: .5s ease;
+        display: block;
+        z-index: -1 ;
+    }
+
+    .btn :hover ::before{
+    width: 9em;
+
+    }
+    p{
+        margin-left: 50%;
+        height: 50%;
+        width: 100px;
+    }
+
+    
+ input[type="submit"]:hover{
+    background: rgb(238, 184, 184);
+}
+
+</style>
+<body>
+    
+    <input type="submit" class="btn"></button>
+    <br><br><br>
+    <br><br><br> <br><br><br>
+
+    <P>&#128525;</P>
+</body>
+</html>
